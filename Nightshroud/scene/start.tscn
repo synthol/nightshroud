@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://h2oge2kk7jf7"]
+
+[ext_resource type="FontFile" uid="uid://cgnlokln13t8q" path="res://asset/font.ttf" id="1_inyi6"]
+[ext_resource type="Script" path="res://script/play.gd" id="2_ripsd"]
+[ext_resource type="Script" path="res://script/tutorial.gd" id="3_2xytk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_djj8e"]
+font = ExtResource("1_inyi6")
+font_size = 100
+
+[node name="start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0509804, 0, 0.0509804, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 361.0
+offset_top = 192.0
+offset_right = 801.0
+offset_bottom = 289.0
+text = "Nightshroud"
+label_settings = SubResource("LabelSettings_djj8e")
+
+[node name="play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 348.0
+offset_right = 696.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("1_inyi6")
+theme_override_font_sizes/font_size = 50
+text = "Play"
+script = ExtResource("2_ripsd")
+
+[node name="tutorial" type="Button" parent="."]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 414.0
+offset_right = 696.0
+offset_bottom = 470.0
+theme_override_fonts/font = ExtResource("1_inyi6")
+theme_override_font_sizes/font_size = 50
+text = "Tutorial"
+script = ExtResource("3_2xytk")

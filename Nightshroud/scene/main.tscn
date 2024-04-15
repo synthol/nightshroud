@@ -1,0 +1,201 @@
+[gd_scene load_steps=7 format=3 uid="uid://c073dhl78deoc"]
+
+[ext_resource type="PackedScene" uid="uid://di8kxatg006t1" path="res://scene/player.tscn" id="1_43mrd"]
+[ext_resource type="PackedScene" uid="uid://dkbebgdk0kndh" path="res://scene/world.tscn" id="2_tsiax"]
+[ext_resource type="PackedScene" uid="uid://bh8hlb6dgby2u" path="res://scene/enemy.tscn" id="3_ua373"]
+[ext_resource type="PackedScene" uid="uid://t3lt3ymv6bkb" path="res://scene/health.tscn" id="4_uobfd"]
+[ext_resource type="PackedScene" uid="uid://bmxfb0fwundi" path="res://scene/ability.tscn" id="5_monph"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyvs2"]
+size = Vector2(296, 124.75)
+
+[node name="main" type="Node2D"]
+y_sort_enabled = true
+
+[node name="player" parent="." instance=ExtResource("1_43mrd")]
+
+[node name="world" parent="." instance=ExtResource("2_tsiax")]
+
+[node name="end" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="end"]
+position = Vector2(3312, 831.625)
+shape = SubResource("RectangleShape2D_wyvs2")
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="enemy" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(-110, 148)
+
+[node name="enemy2" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(-25, 341)
+
+[node name="enemy3" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(362, 407)
+
+[node name="enemy4" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(513, 597)
+
+[node name="enemy5" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(551, 351)
+
+[node name="enemy6" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(613, 636)
+
+[node name="enemy7" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(839, 892)
+
+[node name="enemy8" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(493, 854)
+
+[node name="enemy9" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(744, 858)
+
+[node name="enemy10" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(699, 886)
+
+[node name="enemy11" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(479, 1179)
+
+[node name="enemy12" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(558, 1185)
+
+[node name="enemy13" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(635, 1115)
+
+[node name="enemy14" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(771, 1154)
+
+[node name="enemy15" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(511, 1137)
+
+[node name="enemy16" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1099, 1435)
+
+[node name="enemy17" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1141, 1475)
+
+[node name="enemy18" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(869, 1436)
+
+[node name="enemy19" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(633, 1450)
+
+[node name="enemy20" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(693, 1392)
+
+[node name="enemy21" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(523, 1426)
+
+[node name="enemy22" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1571, 1301)
+
+[node name="enemy23" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1521, 1288)
+
+[node name="enemy24" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1557, 1250)
+
+[node name="enemy25" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1472, 1243)
+
+[node name="enemy26" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1182, 1262)
+
+[node name="enemy27" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1313, 1285)
+
+[node name="enemy28" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1345, 1219)
+
+[node name="enemy29" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2211, 1066)
+
+[node name="enemy30" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2018, 1114)
+
+[node name="enemy31" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2094, 1196)
+
+[node name="enemy32" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2238, 1102)
+
+[node name="enemy33" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2198, 1209)
+
+[node name="enemy34" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2287, 1142)
+
+[node name="enemy35" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2338, 1083)
+
+[node name="enemy36" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(1989, 1215)
+
+[node name="enemy37" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2719, 920)
+
+[node name="enemy38" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2592, 920)
+
+[node name="enemy39" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2525, 850)
+
+[node name="enemy40" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2658, 867)
+
+[node name="enemy41" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2701, 807)
+
+[node name="enemy42" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2611, 789)
+
+[node name="enemy43" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2396, 804)
+
+[node name="enemy44" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2286, 904)
+
+[node name="enemy45" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2467, 880)
+
+[node name="enemy46" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(3289, 673)
+
+[node name="enemy47" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(3263, 639)
+
+[node name="enemy48" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(3170, 670)
+
+[node name="enemy49" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(3082, 667)
+
+[node name="enemy50" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(3180, 598)
+
+[node name="enemy51" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(3123, 617)
+
+[node name="enemy52" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2991, 566)
+
+[node name="enemy53" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2953, 630)
+
+[node name="enemy54" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2822, 586)
+
+[node name="enemy55" parent="enemies" instance=ExtResource("3_ua373")]
+position = Vector2(2720, 596)
+
+[node name="health" parent="." instance=ExtResource("4_uobfd")]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
+
+[node name="ability" parent="." instance=ExtResource("5_monph")]
+offset = Vector2(-8, 35)
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, -8, 35)
+
+[connection signal="body_entered" from="end" to="player" method="_on_end_body_entered"]

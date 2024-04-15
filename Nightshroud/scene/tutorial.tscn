@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://cabfe174qljvq"]
+
+[ext_resource type="FontFile" uid="uid://cgnlokln13t8q" path="res://asset/font.ttf" id="1_u3223"]
+[ext_resource type="Script" path="res://script/back.gd" id="2_4axe1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ninee"]
+font = ExtResource("1_u3223")
+font_size = 28
+
+[node name="tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0509804, 0, 0.0509804, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 1.0
+offset_right = 769.0
+offset_bottom = 609.0
+text = "Controls:
+W = Forward
+A = Left
+S = Backward
+D = Right
+Space = Ability
+
+Goal:
+Progress by eliminating
+the enemy ghosts and
+advancing through the
+dungeon. The more progress
+is made the harder it will get.
+Attack the enemies by
+summoning your ability, this is the
+only way you can eliminate
+them and when it's on cooldown
+you will need to avoid them at
+all costs!"
+label_settings = SubResource("LabelSettings_ninee")
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 586.0
+offset_right = 707.0
+offset_bottom = 642.0
+theme_override_fonts/font = ExtResource("1_u3223")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+script = ExtResource("2_4axe1")

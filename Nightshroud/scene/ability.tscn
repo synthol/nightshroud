@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmxfb0fwundi"]
+
+[ext_resource type="Script" path="res://script/ability.gd" id="1_bx2vu"]
+[ext_resource type="Texture2D" uid="uid://uxbiiskka0km" path="res://asset/unavailable.png" id="2_1co7k"]
+[ext_resource type="Texture2D" uid="uid://q3y0nx5v7lgf" path="res://asset/available.png" id="3_s6tas"]
+
+[node name="ability" type="CanvasLayer"]
+script = ExtResource("1_bx2vu")
+
+[node name="unavailable" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_1co7k")
+
+[node name="available" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_s6tas")
